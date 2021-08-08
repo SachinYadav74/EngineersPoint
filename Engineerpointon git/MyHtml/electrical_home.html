@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineers Point | Electrical</title>
+    <link rel="stylesheet" href="/mycss/electrical_homepage.css">
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="/mycss/phone.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Play&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <navbar id="navbar">
+        <div id="Logo_hamburger">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        </div>
+        <div id="nonnavbar">
+            <img src="/logo.png" alt="engineerspoint.com">
+            <ul>
+                <li><a href="/MyHtml/home.html">Home</a></li>
+                <li><a href="/MyHtml/extras.html">Calculate</a></li>
+                <li><a href="/MyHtml/formulas.html">Formulas</a></li>
+                <li><a href="/MyHtml/Quesans.html">Ques&Ans</a></li>
+            </ul>
+        </div>
+        <div id="hamburger">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <div>
+                        <div class="content">
+                            <li><a href="">Content</a></li>
+                            <li><a href="/MyHtml/mechanical_home.html">Mechanical</a></li>
+                            <li><a href="/MyHtml/electrical_home.html">Electrical</a></li>
+                            <li><a href="/MyHtml/pneumatics_home.html">Pneumatics</a></li>
+                            <li><a href="/MyHtml/electropneumatic_hompage.html">Electropneumatics</a></li>
+                            <li><a href="/MyHtml/hydraulics_homepage.html">Hydraulics</a></li>
+                        </div>
+                        <div class="content">
+                            <li><a href="#Tolerance">Tolerance</a></li>
+                            <li><a href="#Fits">Fits</a></li>
+                            <li><a href="#Drilling">Drilling</a></li>
+                            <li><a href="#RPM_calculator">RPM Calculation</a></li>
+                            <li><a href="#Turning">Turning</a></li>
+                        </div>
+                        <div class="content">
+                            <li><a href="/MyHtml/extras.html">Unit Conversions</a></li>
+                            <li><a href="/MyHtml/extras.html">Area </a></li>
+                            <li><a href="/MyHtml/extras.html">Volume</a></li>
+                            <li><a href="/MyHtml/extras.html">Mass</a></li>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    function openNav() {
+                        document.getElementById("myNav").style.width = "100%";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("myNav").style.width = "0%";
+                    }
+                </script>
+            </div>
+    </navbar>
+    <section id="home">
+        <div id="full_page_content">
+            Content
+            <div class="content">
+                <li><a href="/MyHtml/mechanical_home.html">Mechanical</a></li>
+                <li><a href="/MyHtml/electrical_home.html">Electrical</a></li>
+                <li><a href="/MyHtml/pneumatics_home.html">Pneumatics</a></li>
+                <li><a href="/MyHtml/electropneumatic_hompage.html">Electropneumatics</a></li>
+                <li><a href="/MyHtml/hydraulics_homepage.html">Hydraulics</a></li>
+            </div>
+            <div class="content">
+                <li><a href="#electrical_safety">Electrical Safety</a></li>
+                <li><a href="#basic_wiring">Logical Wiring</a></li>
+                <li><a href="#circuit_challenge">Circuit Challenge</a></li>
+                <li><a href="#ohms_law">VIR Calculation</a></li>
+            </div>
+            <div class="content">
+                <li><a href="/MyHtml/extras.html">SI Unit </a></li>
+                <li><a href="/MyHtml/extras.html">Area</a></li>
+                <!-- <li><a href="">Basic Trignometry</a></li> -->
+                <li><a href="/MyHtml/extras.html">Volume</a></li>
+                <li><a href="/MyHtml/extras.html">Mass</a></li>
+                <li><a href="/MyHtml/extras.html">Formulas</a></li>
+            </div>
+        </div>
+        <div id="hello">
+            <h1 class="hprimary">Welcome Engineers</h1>
+            <div id="intro">
+                <p>Hello all !!! <br>
+                    I welcome you all to Engineers Point Electrical page. Here you can learn many different topics
+                    related to Electrical study. You will com across topics like <a
+                        href="#basic_wiring">Logical Electrical Wirings</a>, <a href="#ohms_law">Ohms Law</a>, <a href="#circuit_challenge">Circuit Challenges
+                        </a>, <a href="#electrical_safety">Electrical Safety</a> all topics related questions and many more. The
+                    plus point is that you can even watch videos regarding logic circuit topic on <a
+                        href="youtube.com">YoutTube</a>. Make sure you read all topics you are instrested in. And get
+                    your problem solved very soon.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="electrical_safety" class="subcontent">
+            <h2>Electrical Safety</h2>
+            <div>
+                <p>Electrical safety is most important one must learn before working on any field.
+                    Every Electrician should follow given safety procedure of working.
+                <ol>
+                    <li style="font-weight: bold;">Disconnecting</li>
+                    <p>Before working on any Electrical machine make sure all the phases are disconnected and all
+                        circuit breakers are off.</p>
+                    <li style="font-weight: bold;">Resetting</li>
+                    <p>Once you have disconnected all circuit breakers and fuses make sure you put a safety lock. This
+                        will ensure your safety, if anyone else tries to connect those fuses.</p>
+                    <li style="font-weight: bold;">Determine the absence of voltage</li>
+                    <p>Ensure absence of voltage with a multimeter or any voltage measuring device. Each supply line
+                        must be tested against earth.</p>
+                    <li style="font-weight: bold;">Earthing and shortcircuiting</li>
+                    <p>In case of earthing and short-ciruiting, all the external conductors are interconnected to the
+                        operational earth by special connection lines. If the plant switched on unwarrentedly no
+                        dangerous situation will occure
+                    </p>
+                    <li style="font-weight: bold;">Insulation</li>
+                    <p>Covering protecting or insulatiog the system components under voltage will prevent the live parts
+                        from coming into direct
+                        contact with external bodies. Tha mats made of insulated materials are often used for covering
+                        the surrounding parts.
+                    </p>
+                </ol>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- <section>
+        <div>
+            <h3>Components</h3>
+        </div>
+        <div>
+            <p>Before working on electrical topics lets learn about some important and day to day electrical
+                components.
+            </p>
+            <div>
+                <li>RCD</li>
+                <p>RCD Theory</p>
+                <li>MCB</li>
+                <p>MCB Theory</p>
+                <li>SMPS</li>
+                <p> SMPS Theory</p>
+                <li>SMPS</li>
+                <p> SMPS Theory</p>
+                <li>Lamps</li>
+                <p>Lamps</p>
+                <li>Buttons</li>
+                <p>Buttons Theory</p>
+                <li>Motors</li>
+                <p>Motors</p>
+            </div>
+        </div>
+    </section> -->
+    <section id="basic_wiring" class="subcontent">
+        <div>
+            <h2>Basic Wiring</h2>
+        </div>
+        <div>
+            <p>Using electrical wiring we will create some logical ciruits with our day to day examples. The content
+                will be as follow</p>
+            <ol>
+                <li>Basic Wiring</li>
+                <li>Latching</li>
+                <li>Dependent Circuit</li>
+                <li>Interlock Circuit</li>
+            </ol>
+        </div>
+        <div>
+            <h3>Basic Wiring</h3>
+            <h4>Basic With button</h4>
+            <p><img src="/images/Pneumatic/circuit/ep/electrical/basicbutton.JPG" alt=""></p>
+            <h3>Basics with contactors</h3>
+            <p><img src="/images/Pneumatic/circuit/ep/electrical/basic with contactors.JPG" alt=""></p>
+
+        </div>
+        <div>
+            <h3>Latching</h3>
+            <p><img src="/images/Pneumatic/circuit/ep/electrical/latching.JPG" alt=""></p>
+        </div>
+        <div>
+            <h3>Dependent Circuit</h3>
+            <p><img src="/images/Pneumatic/circuit/ep/electrical/dependent.JPG" alt=""></p>
+        </div>
+        <div>
+            <h3>Interlock Circuit</h3>
+            <p><img src="/images/Pneumatic/circuit/ep/electrical/intertlock.JPG" alt=""></p>
+        </div>
+        <section id="circuit_challenge">
+            <h2>Circuit Challenge</h2>
+            <div>
+                <h3>On-OFF with same button</h3>
+                <p><img src="/images/Pneumatic/circuit/onoffwithsamebutton.JPG" alt=""></p>
+                <h3>2 Direction rotating motor circuits</h3>
+                <p><img src="/images/Pneumatic/circuit/bidirection motor.JPG" alt=""></p>
+            </div>
+        </section>
+    </section>
+    <section class="subcontent">
+        <div id="ohms_law">
+            <div><h3>Ohms Law</h3></div>
+        <div><p>Ohms law states that the current through a conductor between two points is directly proportional to the voltage across the two points.</p></div>
+        <div>
+            <div>
+                Voltage<input type="number" placeholder="" class="vir" id="voltage_input">
+                <div>Current<input type="number" placeholder="5A" class="vir" id="current_input"></div>
+                Resistance<input type="number" placeholder="2Ω" class="vir" id="resistance_input">
+            </div>
+            <div>
+
+                <label class="checkpoint">Voltage
+                    <input type="radio" name="get_it" checked="checked" id="check1">
+                </label>
+            </div>
+            <div>                
+                <label class="checkpoint">Current
+                    <input type="radio" name="get_it" id="check2">
+                </label>
+            </div>
+            <div>
+                <label class="checkpoint">Resistance
+                    <input type="radio" name="get_it" id="check3">
+                </div>
+            </label>
+            <div><button id="calculate_vir">Calculate</button></div>
+            <div><textarea name="" id="vir_answer" cols="20" rows="3" placeholder="10V"></textarea></div>
+        </div>
+        </div>
+        <script>
+            function vir_calculation() {
+                var resistance = document.getElementById("resistance_input").value;
+                var voltage = document.getElementById("voltage_input").value;
+                var current = document.getElementById("current_input").value;
+                var voltage_check = document.getElementById("check1");
+                var current_check = document.getElementById("check2");
+                var resistance_check = document.getElementById("check3");
+                if (voltage_check.checked == true){
+                    if (current.length <= 0 | resistance.length <= 0) {
+                        alert("Please Enter a valid current and resistance number.")
+                    }
+                    else{
+                        var ans = current * resistance
+                        document.getElementById("vir_answer").value=ans + "V"
+                    }
+                }
+                if (current_check.checked == true){
+                    if (resistance.length <= 0 && voltage.length <= 0){
+                        alert("Please Enter a valid resistance and voltage number.")
+                    }
+                    else{
+                        var ans = voltage/resistance;
+                        document.getElementById("vir_answer").value=ans+"A"
+                    }
+                };
+                if (resistance_check.checked == true){
+                    if (current.length <= 0 && voltage.length <= 0) {
+                        alert("Please Enter a valid current and voltage number.")
+                    }
+                    else{
+                        var ans = voltage/current;
+                        document.getElementById("vir_answer").value=ans+"ohm"
+                    }
+                };
+            }
+            document.getElementById("calculate_vir").addEventListener("click", vir_calculation)
+        </script>
+    </section>
+    <section class="subcontent">
+        <div>
+            <h3>Power calculation</h3>
+        </div>
+        <div>Power calculation</div>
+    </section>
+    <section class="subcontent">
+        <div id="overview">
+            <h1>Overview</h1>
+            <div id="overview_content">
+                <div class="overview_elements">
+                    <h2> <a href="/MyHtml/mechanical_home.html">Mechanical</a></h2>
+                    <li><a href="/MyHtml/mechanical_home.html">Drilling</a></li>
+                    <li><a href="/MyHtml/mechanical_home.html">Milling</a></li>
+                    <li><a href="/MyHtml/mechanical_home.html">Turning</a></li>
+                    <li><a href="/MyHtml/mechanical_home.html">Tolerance</a></li>
+                    <li><a href="/MyHtml/mechanical_home.html">CNC</a></li>
+                    <li><a href="/MyHtml/mechanical_home.html">Engineerign Drawings</a></li>
+                    <li><a href="/MyHtml/mechanical_home.html">Catia Desiging</a></li>
+                </div>
+                <div class="overview_elements">
+                    <h2> <a href="/MyHtml/electrical_home.html">Electrical</a></h2>
+                    <li><a href="/MyHtml/electrical_home.html">Electrical Safety </a></li>
+                    <li><a href="/MyHtml/electrical_home.html">Basic Wirings</a></li>
+                    <li><a href="/MyHtml/electrical_home.html">Logical Wiring</a></li>
+                    <li><a href="/MyHtml/electrical_home.html">Circuit Challenge</a></li>
+                    <li><a href="/MyHtml/electrical_home.html">VIR calculations</a></li>
+                    <li><a href="/MyHtml/electrical_home.html">Power Calculation</a></li>
+                </div>
+                <div class="overview_elements">
+                    <h2> <a href="/MyHtml/pneumatics_home.html">Pneumatics</a></h2>
+                    <li><a href="/MyHtml/pneumatics_home.html">Basic Safety</a></li>
+                    <li><a href="/MyHtml/pneumatics_home.html">Working Principle</a></li>
+                    <li><a href="/MyHtml/pneumatics_home.html">Components</a></li>
+                    <li><a href="/MyHtml/pneumatics_home.html">Circuit desiging</a></li>
+                    <!-- <li><a href="">Circuit Challenge</a></li> -->
+                    <li><a href="/MyHtml/pneumatics_home.html">Cylinder force Calculation</a></li>
+                    <li><a href="/MyHtml/pneumatics_home.html">Pneumatics Cascading</a></li>
+                </div>
+                <div class="overview_elements">
+                    <h2> <a href="/MyHtml/electropneumatic_hompage.html">Electropneumatics</a></h2>
+                    <li><a href="/MyHtml/electropneumatic_hompage.html">Basic Safety</a></li>
+                    <li><a href="/MyHtml/electropneumatic_hompage.html">Solenoids</a></li>
+                    <!-- <li><a href="">Solenoids Working</a></li> -->
+                    <li><a href="/MyHtml/electropneumatic_hompage.html">Circuit making</a></li>
+                    <li><a href="/MyHtml/electropneumatic_hompage.html">Reed Switches</a></li>
+                    <li><a href="/MyHtml/electropneumatic_hompage.html">Circuit Challenge</a></li>
+                    <li><a href="/MyHtml/electropneumatic_hompage.html">Automation Circuit</a></li>
+                </div>
+                <div class="overview_elements">
+                    <h2> <a href="/MyHtml/hydraulics_homepage.html">Hydraulics</a></h2>
+                    <li><a href="/MyHtml/hydraulics_homepage.html">Basic Safety</a></li>
+                    <li><a href="/MyHtml/hydraulics_homepage.html">Hydraulics Pipes</a></li>
+                    <li><a href="/MyHtml/hydraulics_homepage.html">Pumps</a></li>
+                     <li><a href="/MyHtml/hydraulics_homepage.html">Hydraulic oils</a></li>
+                    <li><a href="/MyHtml/hydraulics_homepage.html">Hydraulics Circuits</a></li>
+                    <li><a href="/MyHtml/hydraulics_homepage.html">Circuit Challenge</a></li>
+                    <li><a href="/MyHtml/hydraulics_homepage.html">Componenets</a></li>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineers Point | Area Calculation</title>
+    <link rel="stylesheet" href="/mycss/extra_css.css">
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="/mycss/phone.css">
+
+</head>
+
+<body>
+    <navbar id="navbar">
+        <div id="Logo_hamburger">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        </div>
+        <div id="nonnavbar">
+            <img src="/logo.png" alt="engineerspoint.com">
+            <ul>
+                <li><a href="/MyHtml/home.html">Home</a></li>
+                <li><a href="/MyHtml/extras.html">Calculate</a></li>
+                <li><a href="/MyHtml/formulas.html">Formulas</a></li>
+                <li><a href="/MyHtml/Quesans.html">Ques&Ans</a></li>
+            </ul>
+        </div>
+        <div id="hamburger">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <div>
+                        <div class="content">
+                            <li><a href="">Content</a></li>
+                            <li><a href="/MyHtml/mechanical_home.html">Mechanical</a></li>
+                            <li><a href="/MyHtml/electrical_home.html">Electrical</a></li>
+                            <li><a href="/MyHtml/pneumatics_home.html">Pneumatics</a></li>
+                            <li><a href="/MyHtml/electropneumatic_hompage.html">Electropneumatics</a></li>
+                            <li><a href="/MyHtml/hydraulics_homepage.html">Hydraulics</a></li>
+                        </div>
+                        <div class="content">
+                            <li><a href="#Tolerance">Tolerance</a></li>
+                            <li><a href="#Fits">Fits</a></li>
+                            <li><a href="#Drilling">Drilling</a></li>
+                            <li><a href="#RPM_calculator">RPM Calculation</a></li>
+                            <li><a href="#Turning">Turning</a></li>
+                        </div>
+                        <div class="content">
+                            <li><a href="/MyHtml/extras.html">Unit Conversions</a></li>
+                            <li><a href="/MyHtml/extras.html">Area </a></li>
+                            <li><a href="/MyHtml/extras.html">Volume</a></li>
+                            <li><a href="/MyHtml/extras.html">Mass</a></li>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    function openNav() {
+                        document.getElementById("myNav").style.width = "100%";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("myNav").style.width = "0%";
+                    }
+                </script>
+            </div>
+    </navbar>
+    <section id="area">
+        <div class="area">
+            <h5>Square</h5>
+            <div>
+                Side<input type="number" id="sq_side">
+            </div>
+            <div><button id="sq_a_c">Calculate</button></div>
+            <div>
+                <textarea name="" id="square_area" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="area">
+            <h5>Rectangle</h5>
+            <div>Length <input type="number" id="rec_l"></div>
+            <div>Breadth <input type="number" id="rec_b"></div>
+            <div><button id="rec_a_c">Calculate</button></div>
+            <div><textarea name="" id="rectangle_area" cols="30" rows="10"></textarea></div>
+        </div>
+        <!-- Trapezoid -->
+        <div class="area">
+            <h5>Trapezoid</h5>
+            <div>Longer Length <input type="number" id="trp_L"></div>
+            <div>Shorter Length <input type="number" id="trp_l"></div>
+            <div>Height <input type="number" id="trp_w"></div>
+            <div><button id="trp_a_c">Calculate</button></div>
+            <div><textarea name="" id="trapezoid_area" cols="30" rows="10"></textarea></div>
+        </div>
+        <!-- Triangle -->
+        <div class="area">
+            <h5>Triangle</h5>
+            <div>
+                Length of a side <input type="number" id="tri_l">
+            </div>
+            <div>
+                Height <input type="number" id="tri_h">
+            </div>
+            <div><button id="tri_a_c">Calculate</button></div>
+            <div>
+                <textarea name="" id="triangle_area" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <!-- Equilateral triangle -->
+        <div class="area">
+            <h5>Equilateral triangle</h5>
+            <div>
+                Length <input type="number">
+            </div>
+            <div><button id="eqtri_a_c">Calculate</button></div>
+            <div>
+                <textarea name="" id="eqtriangle_area" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <!-- Regular Polygon -->
+        <div class="area">
+            <h5>Regular Polygon</h5>
+            <div>
+                Diamter <input type="number" id="pol_d">
+                No.of Vertices <input type="number" id="pol_v">
+            </div>
+            <div><button id="pol_a_c">Calculate</button></div>
+            <div>
+                <textarea name="" id="polygon_area" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="area">
+            <h5>Circle</h5>
+            <div>
+                Diameter <input type="number" id="c_d">
+            </div>
+            <div><button id="c_a_c">Calculate</button></div>
+            <div>
+                <textarea name="" id="circle_area" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="area">
+            <h5>Circular sector</h5>
+            <div>
+                Diameter <input type="number" id="cs_d">
+            </div>
+            <div>
+                Angle <input type="number" id="cs_a">
+            </div>
+            <div><button id="cs_a_c">Calculate</button></div>
+            <div>
+                <textarea name="" id="Circle_sector_area" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <!-- <div class="area">
+            <h5>Circular Segment</h5>
+            <div>
+                Diameter <input type="number">
+            </div>
+            <div>
+                Cord Length <input type="number">
+            </div>
+            <div>
+                Width of segment <input type="number">
+            </div>
+            Angle of segment<input type="number">
+            <div>
+                <textarea name="" id="Circle_sector_area" cols="30" rows="10"></textarea>
+            </div>
+        </div> -->
+        <div class="area">
+            <h5>Circular ring Area</h5>
+            <div>Outer Diameter <input type="number" id="c_od"></div>
+            <div>Inner Diameter <input type="number" id="c_id"></div>
+            <div><button id="r_a_c">Calculate</button></div>
+            <div><textarea name="" id="ring_area" cols="30" rows="10"></textarea></div>
+        </div>
+        <div class="area">
+            <h5>Ellipse</h5>
+            <div>
+                Length <input type="number" id="elp_L">
+            </div>
+            <div>
+                Smaller Diameter<input type="number" id="elp_S">
+            </div>
+            <div><button id="elp_a_c">Calculate</button></div>
+            <textarea name="" id="Circle_sector_area" cols="30" rows="10"></textarea>
+        </div>
+        <script>
+            function square_area() {
+                var a = document.getElementById("sq_side").value;
+                var ans = a * a
+                document.getElementById("square_area").value = ans + "mm²";
+            }
+            function rectangle_area() {
+                var a = document.getElementById("rec_l").value;
+                var b = document.getElementById("rec_b").value;
+                var ans = a * b;
+                document.getElementById("rectangle_area").value = ans + "mm²";
+            }
+            function trape_area() {
+                var trp_L = document.getElementById("trp_L").value;
+                var trp_l = document.getElementById("trp_l").value;
+                var trp_w = document.getElementById("trp_w").value;
+                var ans_1 = (trp_L * 1 + trp_l * 1)
+                var ans = ans_1 * trp_w;
+                document.getElementById("trapezoid_area").value = ans + "mm²";
+
+            }
+            function triangle_area() {
+                var tri_l = document.getElementById("tri_l").value;
+                var tri_h = document.getElementById("tri_h").value;
+                var ans = ((tri_l * 1) * (tri_h * 1)) / 2;
+                document.getElementById("triangle_area").value = ans + "mm²";
+            }
+            function eqtriangle_area() {
+                var tri_l = document.getElementById("tri_l").value;
+                var ans = ((tri_l * 1) * 1.732050) * (1 / 4);
+                document.getElementById("eqtriangle_area").value = ans + "mm²";
+            }
+            function polygon() {
+                var pol_D = document.getElementById("pol_d").value;
+                var pol_v = document.getElementById("pol_v").value;
+                var pol_l = ((pol_D * 1) * (Math.sin(180 / (pol_v * 1))));
+                var pol_d = Math.sqrt(((pol_D * pol_D) - (pol_l * pol_l)))
+                var ans = (pol_v * pol_d * pol_l) / 4
+                console.log("pol_d" + pol_D)
+                console.log("pol_l" + pol_l)
+                console.log("pol_v" + pol_v)
+                document.getElementById("circle_area").value = ans + "mm²";
+            }
+            function circle() {
+                var c_d = document.getElementById("c_d").value;
+                var ans = (3.14 * c_d * c_d) / 4;
+                document.getElementById("polygon_area").value = ans + "mm²";
+            }
+            function scircle() {
+                var sc_d = document.getElementById("cs_d").value;
+                var sc_a = document.getElementById("cs_a").value;
+                var ans = ((3.14 * sc_d * sc_d) / 4) * (sc_a / 360);
+                document.getElementById("Circle_sector_area").value = ans + "mm²";
+            }
+            function ring() {
+                var c_id = document.getElementById("c_id").value;
+                var c_od = document.getElementById("c_od").value;
+                var ans = ((3.14 * ((c_od * c_od) - (c_id * c_id))) / 4);
+                document.getElementById("ring_area").value = ans + "mm²";
+            }
+            function elp_a() {
+                var elp_L = document.getElementById("elp_L").value;
+                var elp_S = document.getElementById("elp_S").value;
+                var ans = ((3.14 * elp_L * elp_S) / 4);
+                document.getElementById("ring_area").value = ans + "mm²";
+            }
+            document.getElementById("sq_a_c").addEventListener("click", square_area)
+            document.getElementById("rec_a_c").addEventListener("click", rectangle_area)
+            document.getElementById("trp_a_c").addEventListener("click", trape_area)
+            document.getElementById("tri_a_c").addEventListener("click", triangle_area)
+            document.getElementById("eqtri_a_c").addEventListener("click", eqtriangle_area)
+            document.getElementById("pol_a_c").addEventListener("click", polygon)
+            document.getElementById("c_a_c").addEventListener("click", circle)
+            document.getElementById("cs_a_c").addEventListener("click", scircle)
+            document.getElementById("r_a_c").addEventListener("click", ring)
+            document.getElementById("elp_a_c").addEventListener("click", elp_a)
+        </script>
+    </section>
+    <section id="volume">
+        <h4>Volume</h4>
+        <!-- cube -->
+        <div class="volume">
+            <h5>Cube</h5>
+            <div>length <input type="Number" name="" id="c_l"></div>
+            <div><button id="cube_a_c">Calculate</button></div>
+            <div><textarea name="" id="c_a" cols="30" rows="10"></textarea></div>
+        </div>
+        <!-- Cuboid -->
+        <div class="volume">
+            <h5>Rectangular Prism</h5>
+            <div>Length1 <input type="Number" id="rec_l1"></div>
+            <div>length2<input type="Number" name="" id="rec_l2"></div>
+            <div>length3<input type="Number" name="" id="rec_l3"></div>
+            <div><button id="cuboid_v_c">Calculate</button></div>
+            <div><textarea name="" id="rec_vol_ans" cols="30" rows="10"></textarea></div>
+        </div>
+        <!-- cylinder -->
+        <div class="volume">
+            <h5>Cylinder</h5>
+            <div>Diameter <input type="Number" name="" id="c_l"></div>
+            <div>Height <input type="number"></div>
+            <div><button id="cy_v_c">Calculate</button></div>
+            <div><textarea name="" id="cy_v_a" cols="30" rows="10"></textarea></div>
+        </div>
+        <!-- pyramid -->
+        <div class="volume">
+            <h5>Pyramid</h5>
+            <div>Length <input type="number" id="py_l"></div>
+            Width <input type="number" id="py_w">
+            <div>Height <input type="number" id="py_h"></div>
+            <div><button id="py_v_c">Calculate</button></div>
+            <div><textarea name="" id="py_v_a" cols="30" rows="10"></textarea></div>
+        </div>
+        <!-- cone -->
+        <div class="volume">
+            <h5>Cone</h5>
+            <div>Diamter <input type="number" id="co_d"></div>
+            Height <input type="number" name="" id="co_h">
+            <div><button id="co_v_c">Calculate</button></div>
+            <div><textarea name="" id="co_v_a" cols="30" rows="10"></textarea></div>
+
+        </div>
+        <!-- sphere -->
+        <div class="volume">
+            <h5>Sphere</h5>
+            <div>Diamter <input type="number" id="sp_d"> </div>
+            <div><button id="sp_v_c">Calculate</button></div>
+            <div><textarea name="" id="sp_v_a" cols="30" rows="10"></textarea></div>
+        </div>
+        <script>
+            function cube_vol() {
+                var side = document.getElementById("c_l").value;
+                var ans = side * side * side;
+                document.getElementById("c_a").value = ans + "mm³"
+            }
+            function rec_vol() {
+                var rec_l1 = document.getElementById("rec_l1").value;
+                var rec_l2 = document.getElementById("rec_l2").value;
+                var rec_l3 = document.getElementById("rec_l3").value;
+                var ans = rec_l1 * rec_l2 * rec_l3;
+                document.getElementById("rec_vol_ans").value = ans + "mm³";
+            }
+            function cyl_vol() {
+                var rec_l1 = document.getElementById("rec_l1").value;
+                var rec_l2 = document.getElementById("rec_l2").value;
+                var rec_l3 = document.getElementById("rec_l3").value;
+                var ans = rec_l1 * rec_l2 * rec_l3;
+                document.getElementById("rec_vol_ans").value = ans + "mm³";
+            }
+            function py_vol() {
+                var py_l = document.getElementById("py_l").value;
+                var py_w = document.getElementById("py_w").value;
+                var py_h = document.getElementById("py_h").value;
+                var ans = (py_l * py_w * py_h) / 3;
+                document.getElementById("py_v_a").value = ans + "mm³";
+            }
+            function con_vol() {
+                var co_d = document.getElementById("co_d").value;
+                var co_h = document.getElementById("co_h").value;
+                var ans = ((3.14 * co_d * co_d) / 4) * (co_h / 3);
+                document.getElementById("co_v_a").value = ans + "mm³";
+            }
+            function sph_vol() {
+                var sp_d = document.getElementById("sp_d").value;
+                var ans = ((3.14 * sp_d * sp_d * sp_d) / 6);
+                document.getElementById("sp_v_a").value = ans + "mm³";
+            }
+
+            document.getElementById("cube_a_c").addEventListener("click", cube_vol)
+            document.getElementById("cuboid_v_c").addEventListener("click", rec_vol)
+            document.getElementById("cy_v_c").addEventListener("click", cyl_vol)
+            document.getElementById("py_v_c").addEventListener("click", py_vol)
+            document.getElementById("co_v_c").addEventListener("click", con_vol)
+            document.getElementById("sp_v_c").addEventListener("click", sph_vol)
+        </script>
+    </section>
+    <section id="mass">
+        <div class="mass">
+            <h5>Mass</h5>
+            <div>Volume (dm³)<input type="number" id="mass_vol"></div>
+            Density (kg/dm³)<input type="number" id="mass_den">
+            <div><button id="mas_c">Calculate</button></div>
+            <div><textarea name="" id="mass_a" cols="30" rows="10"></textarea></div>
+        </div>
+        <script>
+            function mass_c(){
+                var den = document.getElementById("mass_den").value;
+                var vol = document.getElementById("mass_vol").value;
+                var ans = den * vol;
+                document.getElementById("mass_a").value = ans + "kg";
+            }
+            document.getElementById("mas_c").addEventListener("click", mass_c)
+
+        </script>
+    </section>
+</body>
+
+</html>
